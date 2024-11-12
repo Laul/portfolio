@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import * as ReactIcons from 'react-icons/fi'
+
 import {
   container,
   heading,
@@ -18,11 +20,14 @@ const Layout = ({ pageTitle, children }) => {
               Home
             </Link>
           </li>
+
           <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
+            
+            <Link to="/projects" className={navLinkText}>
+              < ReactIcons.FiCodesandbox />
             </Link>
           </li>
+        
         </ul>
       </nav>
       <main>
